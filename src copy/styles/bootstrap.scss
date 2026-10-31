@@ -1,0 +1,142 @@
+// Import everything
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --brand-color: #9cb703;
+  --brand-color-dark: #7d9403;
+}
+
+body {
+  padding-top: 76px; /* Abstand für die fixierte Navigation */
+}
+
+/* Links */
+a {
+  color: var(--brand-color-dark);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--brand-color);
+}
+
+/* Navigation */
+.navbar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--brand-color) !important;
+}
+
+/* Buttons in Markenfarbe */
+.btn-brand {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  color: #fff;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--brand-color-dark);
+  border-color: var(--brand-color-dark);
+  color: #fff;
+}
+
+/* Hero */
+.hero-section {
+  position: relative;
+  line-height: 0;
+}
+.hero-img {
+  max-height: 480px;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  font-weight: 700;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin: 0.6rem auto 0;
+}
+
+/* Über uns Liste */
+.badge-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+/* Team */
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.team-card .role {
+  color: var(--brand-color-dark);
+  font-weight: 600;
+}
+
+/* Services */
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.service-card {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.service-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(156, 183, 3, 0.25);
+}
+
+/* Footer */
+footer a {
+  color: var(--brand-color);
+}
+footer a:hover {
+  color: #fff;
+}
+
+.text-brand {
+  color: var(--brand-color);
+}
+.text-brand-dark {
+  color: var(--brand-color-dark);
+}
+
+.bg-brand {
+  background-color: var(--brand-color);
+}

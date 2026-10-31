@@ -1,0 +1,216 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import productHuuri from "../../assets/images/mitarbeiter-laengle-michael.png";
+import productRegenschirm from "../../assets/images/mitarbeiter-laengle-iris.png";
+import productGutschein from "../../assets/images/mitarbeiter-avatar.jpg";
+import productLederPflegeSet from "../../assets/images/mitarbeiter-avatar.jpg";
+---
+
+<Layout>
+  <!-- Seitenkopf -->
+  <header class="py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="section-title mb-3">Unsere Produkte</h1>
+      <p class="lead">
+        Entdecken Sie unsere Auswahl an hochwertigen Produkten.
+      </p>
+    </div>
+  </header>
+
+  <div class="col-lg-12 py-3">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10 py-3 bg-warning container text-center">
+      <p>
+        <strong <strong
+          >Leider sind wir im Moment noch nicht in der Lage, den Webshop zu
+          betreiben.</strong
+        >
+      </p>
+      <p>
+        <strong <strong
+          >Wir bitten Sie, uns bei Interesse an einem Produkt direkt zu
+          kontaktieren.</strong
+        >
+      </p>
+      <p>
+        <strong
+          >Die angegebenen Preise verstehen sich inkl. MWSt und exkl.
+          Versandkosten.</strong
+        >
+      </p>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+
+  <!-- Shop-Bereich: Kategorien-Sidebar + Produktraster -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Produktraster (Webshop-Grid) -->
+        <div class="col-lg-12">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+            <div class="col">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img
+                  src="images/products-desede-leder-pflege-set.jpg"
+                  class="card-img-top border"
+                  alt="De Sede Lederpflegeset"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title h5">De Sede Lederpflegeset</h2>
+                  <p class="card-text small">
+                    Kompakt und leistungsstark – ideal für anspruchsvolle
+                    Anforderungen im professionellen Einsatz.
+                  </p>
+                  <p class="product-price mb-3">
+                    CHF 53.00 (inkl. MwSt. und Versand)
+                  </p>
+                  <a
+                    href="https://go.twint.ch/1/e/tw?tw=acq.Mt9gO-q4TnyGk1q161fB_6eSFJx-ieztGE9KkTuSAQmZKucwqhm4YlfiBeBBQa0k.&trxInfo=Lüscher Wohnen AG Shop - De Sede Lederpflegeset&amount=100.00"
+                    class="btn w-100"
+                    ><img
+                      src="images/paylink-button-dark-DE.png"
+                      alt="Twint link"
+                      class="img-fluid"
+                    /></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img
+                  src="images/products-geschenk-gutschein.jpg"
+                  class="card-img-top border"
+                  alt="Gutschein"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title h5">Gutschein</h2>
+                  <p class="card-text small">
+                    Ob als Geschenk oder für sich selbst – unser Gutschein ist
+                    die ideale Wahl für jeden Anlass.
+                  </p>
+                  <p class="card-text small">
+                    Sie wählen den Betrag und wir stellen Ihnen einen
+                    hochwertigen Gutschein aus, der in unserem gesamten
+                    Sortiment eingelöst werden kann.
+                  </p>
+                  <p class="product-price mb-3">
+                    CHF frei wählbar (inkl. MwSt. und Versand)
+                  </p>
+                  <a
+                    href="https://go.twint.ch/1/e/tw?tw=acq.Mt9gO-q4TnyGk1q161fB_6eSFJx-ieztGE9KkTuSAQmZKucwqhm4YlfiBeBBQa0k.&trxInfo=Gutschein&amount=100.00"
+                    class="btn w-100"
+                    ><img
+                      src="images/paylink-button-dark-DE.png"
+                      alt="Twint link"
+                      class="img-fluid"
+                    /></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img
+                  src="images/products-huuri.jpg"
+                  class="card-img-top border"
+                  alt="Huuri Klanbox Waldklank"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title h5">Huuri Klangbox</h2>
+                  <p class="card-text small flex-grow-1">
+                    Sei es im Schlafzimmer, im Kinderzimmer, im Bad oder am
+                    stillen &Ouml;rtchen, unserer Klangboxen aus Holz
+                    entf&uuml;hren Sie mit wohltuenden Naturkl&auml;ngen weit
+                    weg vom hektischen Alltag und spenden Ruhe und Entspannung.
+                  </p>
+                  <p class="card-text small flex-grow-1">
+                    Bei diesem Produkt wird auf Schweizer Qualit&auml;t gesetzt
+                    und sie sind aus nachhaltig produziertem Schweizer
+                    Eichenholz aus der Region gefertigt.
+                  </p>
+                  <!--p class="card-text small flex-grow-1"-->
+                  <p class="card-text small flex-grow-1">
+                    Sie verf&uuml;gen &uuml;ber einen Bewegungssensor. Sobald
+                    Sie ca. einen Meter nah an sie herankommen ert&ouml;nen
+                    w&auml;hrend rund drei Minuten Waldkl&auml;nge oder ein
+                    Kinderlied.
+                  </p>
+                  <p class="product-price mb-3">
+                    CHF 89.00 (inkl. MwSt. und Versand)
+                  </p>
+                  <a
+                    href="https://go.twint.ch/1/e/tw?tw=acq.Mt9gO-q4TnyGk1q161fB_6eSFJx-ieztGE9KkTuSAQmZKucwqhm4YlfiBeBBQa0k.&trxInfo=Lüscher Wohnen AG Shop - Huuri Klangbox&amount=100.00"
+                    class="btn w-100"
+                    ><img
+                      src="images/paylink-button-dark-DE.png"
+                      alt="Twint link"
+                      class="img-fluid"
+                    /></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card product-card h-100 border-0 shadow-sm">
+                <img
+                  src="images/products-regenschirm-open.png"
+                  class="card-img-top border"
+                  alt="Regenschirm mit Karten von Baden"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h2 class="card-title h5">Regenschirm mit Karte von Baden</h2>
+                  <p class="card-text small">
+                    Modernes Design trifft auf bewährte Funktionalität – die
+                    perfekte Lösung für Ihr Zuhause.
+                  </p>
+                  <p class="product-price mb-3">
+                    CHF 50.00 (inkl. MwSt. und Versand)
+                  </p>
+                  <a
+                    href="https://go.twint.ch/1/e/tw?tw=acq.Mt9gO-q4TnyGk1q161fB_6eSFJx-ieztGE9KkTuSAQmZKucwqhm4YlfiBeBBQa0k.&trxInfo=Lüscher Wohnen AG Shop - Regenschirm mit Karte von Baden&amount=50.00"
+                    class="btn w-100"
+                    ><img
+                      src="images/paylink-button-dark-DE.png"
+                      alt="Twint link"
+                      class="img-fluid"
+                    /></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="col-lg-12 py-3">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10 py-3 bg-warning container text-center">
+      <p>
+        <strong <strong
+          >Leider sind wir im Moment noch nicht in der Lage, den Webshop zu
+          betreiben.</strong
+        >
+      </p>
+      <p>
+        <strong <strong
+          >Wir bitten Sie, uns bei Interesse an einem Produkt direkt zu
+          kontaktieren.</strong
+        >
+      </p>
+      <p>
+        <strong
+          >Die angegebenen Preise verstehen sich inkl. MWSt und exkl.
+          Versandkosten.</strong
+        >
+      </p>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+</Layout>
